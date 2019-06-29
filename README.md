@@ -1,6 +1,6 @@
 # chest
 
-This is [an example](http://example.com/ "Title") inline link.
+- [lazyload](https://github.com/prodbd667/chest/tree/master/lazyload "lazyload")
 
 ## lazyload
 cd lazyload/ && npx http-server
