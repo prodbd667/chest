@@ -2,9 +2,9 @@ function splitNumber(numberAsString) {
   let sumByIndex = 0;
   return numberAsString.split('').reverse().reduce((buffer, el, i) => {
     sumByIndex += i;
-    if(i !== 0 && i%3 !== 0 && time % 3 === 0) {
+    if(i !== 0 && i%3 !== 0 && sumByIndex % 3 === 0) {
       buffer = ' ' + el + buffer;
-      time = 0;
+      sumByIndex = 0;
     } else {
       buffer =  el + buffer;
     }
