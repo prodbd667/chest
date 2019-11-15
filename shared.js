@@ -1,16 +1,7 @@
 function splitNumber(numberAsString) {
-  let sumByIndex = 0;
   return numberAsString.split('').reverse().reduce((buffer, el, i) => {
-    sumByIndex += i;
-    if(i !== 0 && i%3 !== 0 && sumByIndex % 3 === 0) {
-      buffer = ' ' + el + buffer;
-      sumByIndex = 0;
-    } else {
-      buffer =  el + buffer;
-    }
-    
-    return buffer;
-  }, '');
+    return (i % 3 === 2) ? buffer = ' ' + el + buffer : buffer =  el + buffer, buffer;
+  }, '').trim();
 }
 
 function splitNumber(numberAsString) {
